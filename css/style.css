@@ -388,40 +388,23 @@ body {
   gap: clamp(8px, 1.4vw, 12px);
 }
 .social {
-  width: clamp(36px, 4vw, 44px);
-  height: clamp(36px, 4vw, 44px);
-  display: grid;
-  place-items: center;
-  background: rgba(0, 0, 0, 0.75);
-  color: #e8e8e8;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+
+  border-radius: 12px;
+
   text-decoration: none;
-  border-radius: 4px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: lowercase;
-  transition: transform 0.25s ease;
-}
-.social:hover {
-  transform: translateY(-2px);
-  background: rgba(0, 0, 0, 0.9);
-}
-/* Webb: text + ikoner */
-@media (min-width: 721px) {
-  .footer-content {
-    display: block;
-  }
-  .footer-socials {
-    display: flex;
-  }
-}
-/* Mobil: bara titlar (ingen text eller ikoner) */
-@media (max-width: 720px) {
-  .footer-content {
-    display: none;
-  }
-  .footer-socials {
-    display: none;
-  }
+
+  font-size: 24px;
+
+  transition: all 0.25s ease;
 }
 /* Pandoras ask RÖR INTE */
 .site-footer a,
